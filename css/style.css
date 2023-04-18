@@ -1,20 +1,131 @@
 img {
-    width: 20%;
-    height: auto;
-  }
 
-.p2{
-
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
 }
 
-.p1{
+h1{
+
+    background-image: url(../default_images/baltimore-maryland-skyline.jpeg);
+    background-size: contain;
+}
+
+.btn-btn-outline-success{
+
+    background-color: yellow;
+}
+
+.P2{
 
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
+}
+
+.P1{
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.about{
+
+    background-image: url(../default_images/photo-1611706311468-a2140f23fb71.jpeg);
+}
+
+.about h2{
+
+    color: #5b70e3;
+}
+
+.about p{
+
+    color: #017e9f;
+}
+
+@media screen and (min-width: 300px){
+
+    .P2{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .P2 img:last-child{
+
+        grid-column: 1/ -1;
+    }
+
+    .P1{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: center;
+    }
+
+}
+
+@media screen and (min-width: 400px){
+
+    .P2{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        align-items: stretch;
+        justify-items: center;
+    }
+
+    .P2 img:last-child{
+
+        grid-column: 1/ -1;
+    }
+
+    .P1{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        align-items: stretch;
+        justify-items: center;
+    }
+
+}
+
+@media screen and (min-width: 700px){
+
+    .P2{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-around;
+        align-items: stretch;
+        justify-items: center;
+    }
+
+    .P2 img:last-child{
+
+        grid-column: 3/ -1;
+    }
+
+    .P1{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-around;
+        align-items: stretch;
+        justify-items: center;
+    }
+
 }
