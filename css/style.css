@@ -23,6 +23,12 @@ a:link{
     color: yellow;
 }
 
+.container-fluid a:active{
+
+    text-decoration: underline;
+    color: yellow;
+}
+
 .skip{
 
     background-color: blueviolet;
